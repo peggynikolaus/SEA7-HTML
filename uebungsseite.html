@@ -1,0 +1,184 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>UebungsseitePEG</title>
+    <meta charset="UTF-8">
+    <script src="uebungsseite.js" type="module"></script>         <!-- JavaScript -->
+    <link href="favicon(1).ico" rel="icon" type="image/x-icon" />
+    
+  <style>           
+
+    .blackborder{
+		border: 5px solid green
+		} 
+
+    #div1{
+    text-align: center;
+    width: 333,33px;
+    float: left;
+    margin:auto;
+    }
+
+    #div2{
+    text-align: center;
+    width: 333,33px;
+    float: right
+    }
+
+    #div3{
+    text-align: center;
+    width: 333,33px;
+    float: center
+    }
+
+    header {
+		color: green;
+		background-color: pink;
+    text-align: center;
+    font-family: arial;
+    width: 1000px;
+    margin:auto
+		}
+    
+	  main {
+    text-align: center;
+    background-color: blueviolet;
+    font-family: arial;
+    width: 1000px;
+    margin:auto
+    }
+	
+  </style>
+
+  </head>
+
+<body>
+  <header class="blackborder">
+    <h1>Übungsseite von Peg</h1>
+    <h2>Übung HTML und CSS</h2>
+  </header>
+
+  <main class="blackborder">
+    <p>Das ist meine Übungsseite für die SEA!</p>
+    <p>Wir lernen HTML, CSS und JavaScript.</p>
+    
+    <h3>Information to span-tag and div-element:</h3>
+    <p>The span-tag is an inline container used to mark up at part of a text, or a part of a document.<br>
+    The span-tag is easily styled by CSS or manipulated with JavaScript using the class or id attribute.<br>
+    The span-tag is much like the div-element, but div is a block-element an span is an inline element.<br>
+    To example: My dog called "Scully" has <strong><span style="color:cadetblue">lightblue</span></strong> eyes.</p>
+
+    <div>
+        <img src=irland1.jpg></img>          <!-- gespeichertes Bild einfügen -->
+        <p><strong>Foto aus Irland 2011</strong></p>
+    </div>
+  </main>
+
+  <header class="blackborder">
+    <h1>Einbindung von JavaScript</h1>
+    <h2>Input, Output und Button</h2>
+  </header>
+
+  <main class="blackborder" style="height: 280px;">
+    <p>Aus mehreren Eingabefeldern wird ein Ausgabefeld.</p>
+    <p>Einbindung Button</p>
+    
+    <div id=div1>
+        <p>Eingabe Daten</p>
+        <input id=Vorname placeholder="Eingabe Vorname"></input><br>
+        <input id=Name placeholder="Eingabe Nachname"></input><br>
+        <input id=Strasse placeholder="Eingabe Strasse u Nr"></input><br>
+        <input id=Ort placeholder="Eingabe PLZOrt"></input><br>
+    </div>
+
+    <div id="div2">
+        <p>Ausgabe Daten</p>
+        <p id=Output style="border: 2px solid black; height: 90px; width: 200px; 
+        background-color: white;"></p>
+    </div>
+
+    <div id="div3">
+        <br>
+        <br>
+        <button id=buttonOK type="button">OK</button><br>
+        <button id=buttonClear type="button">Clear</button>
+    </div>
+    </p>
+  </main>
+
+  <header class="blackborder">
+    <h1>Taschenrechner</h1>
+    <h2>Taschenrechner mit Buttons</h2>
+  </header>
+  <main class="blackborder" style="height: 230px;">
+        <br>
+        <button id=button1 type="button">1</button>
+        <button id=button2 type="button">2</button>
+        <button id=button3 type="button">3</button>
+        <button id=buttonAdd type="button">+</button>
+        <button id=leer type="button">X</button>
+        <br>
+        <button id=button4 type="button">4</button>
+        <button id=button5 type="button">5</button>
+        <button id=button6 type="button">6</button>
+        <button id=buttoSubtract type="button">-</button>
+        <button id=leer type="button">X</button>
+        <br>
+        <button id=button7 type="button">7</button>
+        <button id=button8 type="button">8</button>
+        <button id=button9 type="button">9</button>
+        <button id=buttonMultiply type="button">*</button>
+        <button id=leer type="button">X</button>
+        <br>
+        <button id=buttonClean type="button">C</button>
+        <button id=button0 type="button">0</button>
+        <button id=buttoEqual type="button">=</button>
+        <button id=buttonDivide type="button">/</button>
+        <button id=buttonQuad type="button">x2</button>
+        <br>
+        <input id=displayInput type=text placeholder="Eingabe"/><br>
+        <input id=displayInputValue1 type=text/>
+        <input id=displayInputZeichen type=text/>
+        <input id=displayInputValue2 type=text/><br>
+        <input id=displayOutput type=text placeholder="Ergebnis"/>
+
+  </main>
+
+  <header class="blackborder">
+    <h1>Kleines Hundelexikon</h1>
+    <h2>Fetch-function mit JSON</h2>
+  </header>
+  
+  <main class="blackborder">
+    <br>
+    <input id="eingabeRasse" placeholder="Eingabe Rasse"></input> <!-- placeholder = schreibt Bezeichnung direkt ins Feld -->
+    <button id="ButtonRasse" type="button">OK</button>
+    <p>Rassename
+    <input id="Rassename" style = "width:400px"/></p>
+    <p>FCI-Klassifizierung
+    <input id="FCIGruppe" style = "width:400px"></input></p>
+    <p>Groesse
+    <input id="Groesse" style = "width:400px"/></p>  
+    <p>Verwendung
+    <input id="idVerwendung" style = "width:400px"/></p>  
+    <p>Eigenschaften</p>
+    <p id="idEigenschaften" style="border: 2px solid black; height: 200px; width: 70%; 
+    background-color: white; float: center; text-align: center;"></p>
+    
+    <!--<input id="Firstname" placeholder="write from JS"></input> <br><br>
+    <input id="Surname" placeholder="write from JS"></input>
+    -->
+    
+
+  </main>
+
+</body>
+
+
+
+
+
+
+</html>
